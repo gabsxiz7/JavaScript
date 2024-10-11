@@ -1,23 +1,3 @@
-function AddCarro(){
-    let carro = {
-        "marca": "Fiat",
-        "modelo": "uno Vivace",
-        "ano": 2021,
-        "cor": "preta"
-    }
-    console.log(carro);
- 
-}
-function AddCarro2(){
-    let carro = {
-        "marca": document.getElementById("marca").value,
-        "modelo": document.getElementById("modelo").value,
-        "ano": document.getElementById("ano").value,
-        "cor": document.getElementById("cor").value,
-    }
-    console.log(carro);
- 
-}
 function AddCarrosArray(){
     let carros = [
         {  
@@ -48,10 +28,17 @@ function AddCarrosArray(){
  
     }
     //carros.unshift(carro);
-    carros.push(carro);
- 
- 
- 
+    //carros.push(carro);
+    carros.splice(2,1, carro);
+
     console.log(carros);
+
+    let findCarro = carros.find(carro => carro.cor == "vermelho");
+
+    console.log(findCarro);
+
+    let filterCarro = carros.filter(car => car.ano >= 2005);
+    console.log(filterCarro);
 }
+
  

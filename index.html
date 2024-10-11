@@ -6,32 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script t</title>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <fieldset style="width: fit-content;">
  
-    <legend>Carros:</legend>
+    <legend>Cadastro de Alunos:</legend>
  
     <form>
-  <label for="marca">Marca:</label><br>
+  <label for="marca">Matrícula:</label><br>
   <input type="text" id="marca" name="marca"><br>
  
-  <label for="modelo">Modelo:</label><br>
+  <label for="modelo">Nome:</label><br>
   <input type="text" id="modelo" name="modelo"><br>
  
-  <label for="ano">Ano de fabricacão:</label><br>
+  <label for="ano">Data de nascimento:</label><br>
   <input type="date" id="ano" name="ano"><br>
  
-  <label for="cor">Cor:</label><br>
-  <input type="text" id="cor" name="cor"><br>
+  <label for="cor">Curso:</label><br>
+  <input type="text" id="Curso" name="cor"><br>
+ 
+  <label for="Sexo">Sexo:</label><br>
+
+   <input type="radio" value="Masculino" id="Masculino" name="sexo">
+  <label for="Sexo">Masculino</label><br>
+ 
+  
+  <input type="radio" value="Feminino" id="Feminino" name="sexo">
+  <label for="Sexo">Feminino</label><br>
  
   <br>
-  <input type="button" onclick="AddCarrosArray()" value="Adicionar">
+  <input type="button" onclick="AddCarrosArray()" value="Cadastrar Aluno">
  
 </form>
 </fieldset>
 </body>
-</html>
+</html> 
  
  
  
